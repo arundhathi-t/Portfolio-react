@@ -1,0 +1,43 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.error-code {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #020617;
+}
+
+.error-message {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.error-msg {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+  max-width: 500px;
+}
+
+.link {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #020617;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color:#64748b;
+  }
+}
