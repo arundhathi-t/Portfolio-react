@@ -1,8 +1,7 @@
 import React from "react";
 import { Grid, Container, Box, Typography } from "@mui/material";
-import FlipCard from "./FlipCard"; 
-import "./Skills.scss"; 
-
+import FlipCard from "./FlipCard";
+import "./Skills.scss";
 
 const Skills = () => {
   const programmingLang = [

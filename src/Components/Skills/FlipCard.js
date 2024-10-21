@@ -9,7 +9,7 @@ import {
   ListItem,
   ListItemIcon,
 } from "@mui/material";
-import "./Skills.scss"; 
+import "./Skills.scss";
 import CircleIcon from "@mui/icons-material/Circle";
 
 const FlipCard = ({ title, data }) => {
