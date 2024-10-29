@@ -17,7 +17,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
-      [name]: value, // Update the field based on the "name" attribute
+      [name]: value,
     }));
   };
 
@@ -87,7 +87,7 @@ const Contact = () => {
                 label="Your Email"
                 fullWidth
                 required
-                name= 'email'
+                name="email"
                 value={formData.email}
                 onChange={handleChange}
                 margin="normal"
@@ -100,7 +100,7 @@ const Contact = () => {
                 label="Your Message"
                 fullWidth
                 required
-                name='description'
+                name="description"
                 value={formData.description}
                 onChange={handleChange}
                 margin="normal"
@@ -127,6 +127,66 @@ const Contact = () => {
           </Paper>
         </Grid>
       </Grid>
+      <Box
+        sx={{
+          backgroundColor: "#64748b",
+          padding: "1rem 0",
+          // marginTop: "2rem",
+          borderTop: "1px solid #e0e0e0",
+        }}
+      >
+        <Container>
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={4}>
+              <Typography variant="h3" gutterBottom sx={{ ml: 10, mr: 20 }}>
+                Let's Get Started
+              </Typography>
+              <Typography variant="h5" sx={{ ml: 20, mr: 25, mt: -2 }}>
+                Connect With Me!
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "10px",
+                }}
+              >
+                <PhoneIcon sx={{ marginRight: "10px", color: "black" }} />
+                <Typography variant="body1" fontWeight={"bold"}>
+                  9360661701
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "10px",
+                }}
+              >
+                <EmailIcon sx={{ marginRight: "10px", color: "black" }} />
+                <Typography variant="body1" fontWeight={"bold"}>
+                  arundhathtiofficial@gmail.com
+                </Typography>
+              </Box>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "10px",
+                }}
+              >
+                <LocationOnIcon sx={{ marginRight: "10px", color: "black" }} />
+                <Typography variant="body1" fontWeight={"bold"}>
+                  Bengaluru, Karnataka - 560037
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
     </Container>
   );
 };
