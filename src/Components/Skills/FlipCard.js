@@ -67,13 +67,13 @@ const FlipCard = ({ title, data }) => {
                   <Box sx={{ mt: 1.5 }}>
                     <Typography
                       variant="body1"
-                      sx={{ fontStyle: "oblique", fontSize: "20px" }}
+                      sx={{ fontStyle: "oblique", fontSize: "15px" }}
                     >
                       {item.skill}
                     </Typography>
                     <Typography
                       variant="body2"
-                      sx={{ fontWeight: "bold", fontSize: "15px" }}
+                      sx={{ fontWeight: "bold", fontSize: "12px" }}
                     >
                       {item.level}
                     </Typography>

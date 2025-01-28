@@ -5,35 +5,32 @@ const Home = () => {
   return (
     <Box
       sx={{
-        height: "80vh",
+        minHeight: "80vh",
         display: "flex",
-        alignItems: "center", 
-        justifyContent: "center", 
-        padding: "20px",
+        alignItems: "center",
+        justifyContent: "center",
+        px: { xs: 2, sm: 4, md: 6 }, 
       }}
     >
       <Grid
         container
-        spacing={12} 
+        spacing={{ xs: 4, md: 8 }} 
         alignItems="center"
         justifyContent="center"
         maxWidth="lg"
       >
-        {/* image Section */}
-        <Grid item xs={12} md={5}>
+        {/* Image Section */}
+        <Grid item xs={12} sm={6} md={5} display="flex" justifyContent="center">
           <CardMedia
-            className="image"
             component="img"
             src="/aru.jpg"
             alt="Profile"
             sx={{
-              mb:"50px",
-              width: { xs: "80%", sm: "70%", md: "100%" },
-              maxWidth: "300px",
+              width: { xs: "90%", sm: "80%", md: "100%" },
+              maxWidth: 320,
               borderRadius: "8px",
               border: "6px solid white",
               boxShadow: "5px 5px 0px 0px #000",
-              margin: "auto", 
               transition: "transform 0.3s ease-in-out",
               "&:hover": {
                 transform: "scale(1.05)",
@@ -43,14 +40,14 @@ const Home = () => {
         </Grid>
 
         {/* Content Section */}
-        <Grid item xs={12} md={5}>
+        <Grid item xs={12} sm={6} md={5}>
           <Typography
             variant="h1"
             sx={{
               fontWeight: 500,
-              fontSize: { xs: "30px", sm: "40px", md: "50px" },
+              fontSize: { xs: "28px", sm: "36px", md: "44px" },
               fontStyle: "oblique",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", sm: "left" },
             }}
           >
             Arundhathi T
@@ -59,9 +56,9 @@ const Home = () => {
             variant="h3"
             sx={{
               fontWeight: 550,
-              fontSize: { xs: "14px", md: "16px" },
+              fontSize: { xs: "16px", md: "18px" },
               fontStyle: "oblique",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", sm: "left" },
             }}
           >
             I'm a Frontend Developer
@@ -73,29 +70,28 @@ const Home = () => {
               fontFamily: "Inter",
               fontStyle: "italic",
               maxWidth: 600,
-              margin: "20px auto",
-              textAlign: { xs: "center", md: "left" },
+              mt: 2,
+              textAlign: { xs: "center", sm: "left" },
             }}
           >
-            "React.js Frontend Developer with 2 years of experience crafting
-            sleek, dynamic interfaces. Expert in React.js, I transform ideas
-            into interactive, high-performance web applications, driving user
-            engagement with clean, scalable code."
+            "React.js Frontend Developer with 2 years of experience crafting sleek, dynamic interfaces. Expert in React.js, I transform ideas into interactive, high-performance web applications, driving user engagement with clean, scalable code."
           </Typography>
 
           <Stack
             direction={{ xs: "column", sm: "row" }}
             spacing={2}
             sx={{
-              justifyContent: { xs: "center", md: "flex-start" },
+              justifyContent: { xs: "center", sm: "flex-start" },
               alignItems: "center",
+              mt: 3,
             }}
           >
             <Button
               variant="contained"
               sx={{
                 backgroundColor: "#020617",
-                transition: "transform 0.3s ease-in-out",
+                px: 3, py: 1.5, 
+                fontSize: "14px",
                 "&:hover": {
                   transform: "scale(1.08)",
                   backgroundColor: "#64748b",
@@ -105,7 +101,7 @@ const Home = () => {
               <a
                 href="/Arundhathi Profile.pdf"
                 download="Arundhathi T Profile.pdf"
-                style={{ color: "white", textDecoration: "none" }}
+                style={{ color: "white", textDecoration: "none", display: "block", width: "100%" }}
               >
                 Download CV
               </a>
@@ -114,7 +110,8 @@ const Home = () => {
               variant="outlined"
               sx={{
                 backgroundColor: "#020617",
-                transition: "transform 0.3s ease-in-out",
+                px: 3, py: 1.5,
+                fontSize: "14px",
                 "&:hover": {
                   transform: "scale(1.08)",
                   backgroundColor: "#64748b",
@@ -123,7 +120,7 @@ const Home = () => {
             >
               <a
                 href="/contact"
-                style={{ color: "white", textDecoration: "none" }}
+                style={{ color: "white", textDecoration: "none", display: "block", width: "100%" }}
               >
                 Contact Me
               </a>
