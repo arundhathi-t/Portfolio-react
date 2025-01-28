@@ -28,6 +28,7 @@ const Home = () => {
             sx={{
               width: { xs: "90%", sm: "80%", md: "100%" },
               maxWidth: 320,
+              mt:4,
               borderRadius: "8px",
               border: "6px solid white",
               boxShadow: "5px 5px 0px 0px #000",
