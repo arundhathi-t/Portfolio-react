@@ -6,7 +6,6 @@ import {
   Typography,
   Button,
   CardActions,
-  Box,
 } from "@mui/material";
 
 const ProjectCard = ({ image, title, description, githubLink }) => {

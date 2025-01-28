@@ -53,7 +53,7 @@ const Skills = () => {
         <Grid item xs={12} sm={6} md={4}>
           <FlipCard title="Frameworks" data={frameworks} />
         </Grid>
-        <Grid item xs={12} sm={6} md={4} sx={{ ml: 25, mb: 2 }}>
+        <Grid item xs={12} sm={6} md={4}>
           <FlipCard title="State Management" data={stateManagement} />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>

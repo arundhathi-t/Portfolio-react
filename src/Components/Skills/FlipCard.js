@@ -4,7 +4,6 @@ import {
   CardContent,
   Typography,
   Box,
-  Grid,
   List,
   ListItem,
   ListItemIcon,
@@ -31,13 +30,19 @@ const FlipCard = ({ title, data }) => {
           sx={{
             backgroundColor: "#f5f5f5",
             borderRadius: "50px 8px 8px 8px",
+            width: { xs: "100%", sm: "90%", md: "100%" },
+            height: "100%",
           }}
         >
           <CardContent>
             <Typography
               variant="h6"
               textAlign="center"
-              sx={{ fontWeight: "bold", mt: 12, fontSize: "30px" }}
+              sx={{
+                fontWeight: "bold",
+                mt: { xs: 8, sm: 10, md: 12 },
+                fontSize: { xs: "18px", sm: "24px", md: "30px" },
+              }}
             >
               {title}
             </Typography>
